@@ -72,7 +72,7 @@ Product *createProduct(int *count)
 			generateProduct(&pr[i].art, pr[i].id);
 			pr[i].quantity = 100 + rand() % 1000;
 			pr[i].price = 1000 + rand() % 5000;
-			pr[i].year = 1990 + rand() % 28;
+			pr[i].year = 2014+ rand() % 4;
 			createName(pr[i].maker, 10);
 		}
 		printInfoProduct(pr, *count);

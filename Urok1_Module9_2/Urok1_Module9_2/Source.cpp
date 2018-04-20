@@ -31,6 +31,7 @@ void main()
 			*/
 		
 			int count = 10;
+			printf("--- Информация о товаре ---\n");
 			Product *pr = createProduct(&count);
 			int max = 0, maxInd;
 			for (int i = 0; i < count; i++)
@@ -235,16 +236,26 @@ void main()
 		case 9:
 		{
 			/*	Поля структуры				Задача
-			Количество					Определить количество товаров, произведенных более чем два года назад,
-			Цена						и напечатать все сведения о них
-			Год изготовления
-			Производитель
+				Количество					Определить количество товаров, произведенных более чем два года назад,
+				Цена						и напечатать все сведения о них
+				Год изготовления
+				Производитель
 			*/
 
-			int count = 10;
+			int count = 10, k=0;
 			Product *pr = createProduct(&count);
 
-
+			printf("Информация о товарах, произведенных более чем два года назад.\n");
+			for (int i = 0; i < count; i++)
+			{
+				if ((2018 - pr[i].year) > 2)
+				{
+					printInfoProduct(&pr[i], 1);
+					k++;
+				}					
+			}
+					
+			printf("Количество: %d\n", k);
 
 			system("pause");
 			system("cls");
@@ -261,7 +272,14 @@ void main()
 			*/
 
 			int count = 10;
+			printf("Информация о компьютерах:\n");
 			Computer *cmp = createComp(&count);
+			printf("Компьютеры, которые имеют DVD ROM:\n");
+			for (int i = 0; i < count; i++)
+			{ 
+				if(cmp[i].DVD>0)
+					printInfoComp(&cmp[i], 1);
+			}
 
 			system("pause");
 			system("cls");
