@@ -232,9 +232,7 @@ void main()
 			//printf("Средний балл оценок студентов по физике:\n");
 			for (int i = 0; i < count; i++)
 			{
-				//if (strcmp(cmp[i].sub->nameSub, "Физика") == 0)
-					sum += cmp[i].sub[0].rate;
-				//if(strcmp(cmp[i].sub->nameSub, "Информатика") == 0)
+					sum += cmp[i].sub[0].rate;				
 					printf("Фамилия: %s, Дата рождения: %d.%d.%d, Оценка по информатике: %d\n",
 					cmp[i].name, cmp[i].bdt.day, cmp[i].bdt.month, cmp[i].bdt.year, cmp[i].sub[2].rate);
 			}
