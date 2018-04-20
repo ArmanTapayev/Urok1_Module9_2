@@ -116,6 +116,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Service.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="01_product.h" />
+    <ClInclude Include="02_computer.h" />
+    <ClInclude Include="03_student.h" />
+    <ClInclude Include="04_employee.h" />
+    <ClInclude Include="totalService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,5 +18,25 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="01_product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="02_computer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="03_student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="04_employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="totalService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
